@@ -1,0 +1,10 @@
+@import "shared";
+
+:host {
+  display: flex;
+  align-items: center;
+  height: 1.5rem;
+  padding: 0 0.5rem;
+  background-color: $color__main--footer;
+  font-size: 0.75rem;
+}

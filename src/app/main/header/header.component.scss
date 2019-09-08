@@ -1,0 +1,7 @@
+@import "shared";
+
+:host {
+  display: block;
+  height: 3rem;
+  background-color: $color__main--header;
+}

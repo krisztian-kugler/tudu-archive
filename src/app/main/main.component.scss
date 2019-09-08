@@ -1,0 +1,24 @@
+@import "shared";
+
+:host {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: $color__main--main;
+  color: #fff;
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+
+  &__header {
+    height: 3rem;
+  }
+
+  &__board {
+    display: flex;
+    flex: 1 1 auto;
+  }
+}
