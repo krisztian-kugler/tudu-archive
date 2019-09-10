@@ -2,10 +2,7 @@
 <main class="project">
   <section class="project__header"></section>
   <section class="project__board">
-    <td-icon src="assets/icons/angular.svg" size="128"></td-icon>
-    <td-icon src="assets/icons/vue.svg" size="96"></td-icon>
-    <div td-icon src="assets/icons/angular.svg" size="64"></div>
-    <div td-icon src="assets/icons/vue.svg" size="32"></div>
+    <td-ticket-list *ngFor="let ticketList of ticketLists$ | async"></td-ticket-list>
   </section>
 </main>
 <td-footer></td-footer>
