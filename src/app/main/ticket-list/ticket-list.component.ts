@@ -1,4 +1,5 @@
-import { Component, OnInit, ChangeDetectionStrategy } from "@angular/core";
+import { Component, OnInit, ChangeDetectionStrategy, Input, ChangeDetectorRef } from "@angular/core";
+import { TicketList } from "src/app/shared/models/ticket.model";
 
 @Component({
   selector: "td-ticket-list",
@@ -7,7 +8,9 @@ import { Component, OnInit, ChangeDetectionStrategy } from "@angular/core";
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class TicketListComponent implements OnInit {
-  constructor() {}
+  constructor(private changeDetector: ChangeDetectorRef) {}
+
+  @Input() ticketList: TicketList;
 
   ngOnInit() {}
 }

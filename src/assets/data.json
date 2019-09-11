@@ -1,14 +1,28 @@
 [
   {
     "id": 1,
-    "title": "List 1"
+    "title": "To Do",
+    "tickets": [
+      {
+        "id": 1,
+        "title": "Test Card 1"
+      },
+      {
+        "id": 2,
+        "title": "Test Card 2"
+      },
+      {
+        "id": 3,
+        "title": "Test Card 3"
+      }
+    ]
   },
   {
     "id": 2,
-    "title": "List 2"
+    "title": "In Progress"
   },
   {
     "id": 3,
-    "title": "List 3"
+    "title": "Completed"
   }
 ]

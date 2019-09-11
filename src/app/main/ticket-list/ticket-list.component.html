@@ -1,1 +1,7 @@
-<p>ticket-list works!</p>
+<header class="header">
+  <h3 class="header__title">{{ ticketList.title }}</h3>
+  <span class="header__actions">More</span>
+</header>
+<main class="cards">
+  <td-ticket-card *ngFor="let card of ticketList.cards" tdDraggable></td-ticket-card>
+</main>
