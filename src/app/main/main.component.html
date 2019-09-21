@@ -1,7 +1,7 @@
 <td-header></td-header>
 <main class="project">
   <section class="project__header"></section>
-  <section class="project__board" [ngStyle]="{ 'grid-template-columns': 'repeat(' + ticketLists.length + ', 15rem)' }">
+  <section class="project__board" [ngStyle]="{ 'grid-template-columns': 'repeat(' + ticketLists.length + ', 20rem)' }">
     <td-ticket-list *ngFor="let ticketList of ticketLists" [ticketList]="ticketList"></td-ticket-list>
   </section>
 </main>

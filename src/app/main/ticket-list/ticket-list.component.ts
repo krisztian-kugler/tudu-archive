@@ -12,5 +12,7 @@ export class TicketListComponent implements OnInit {
 
   @Input() ticketList: TicketList;
 
-  ngOnInit() {}
+  ngOnInit() {
+    console.log(this.ticketList);
+  }
 }

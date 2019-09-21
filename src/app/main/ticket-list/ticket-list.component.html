@@ -3,5 +3,5 @@
   <span class="header__actions">More</span>
 </header>
 <main class="cards">
-  <td-ticket-card *ngFor="let card of ticketList.cards" tdDraggable></td-ticket-card>
+  <td-ticket-card *ngFor="let card of ticketList.tickets" [ticket]="card" tdDraggable></td-ticket-card>
 </main>
