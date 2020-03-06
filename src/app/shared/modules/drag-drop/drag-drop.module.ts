@@ -13,7 +13,7 @@ import { DragDropService } from "./drag-drop.service";
   providers: [DragDropService]
 })
 export class DragDropModule {
-  public static forRoot(): ModuleWithProviders {
+  public static forRoot(): ModuleWithProviders<DragDropModule> {
     return {
       ngModule: DragDropModule,
       providers: [DragDropService]

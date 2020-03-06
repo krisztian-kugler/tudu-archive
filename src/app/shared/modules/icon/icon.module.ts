@@ -12,7 +12,7 @@ import { IconService } from "./icon.service";
   providers: [IconService]
 })
 export class IconModule {
-  public static forRoot(): ModuleWithProviders {
+  public static forRoot(): ModuleWithProviders<IconModule> {
     return {
       ngModule: IconModule,
       providers: [IconService]
